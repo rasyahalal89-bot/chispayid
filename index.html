@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chispay.id - Toko Pulsa & Top Up Game Termurah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="logo.png" alt="Chispay.id Logo" />
+          <h1>Chispay.id</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#produk">Layanan Jasa & Produk</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-text">
+          <h2>Top Up Pulsa & Kuota Murah</h2>
+          <p>Transaksi cepat, aman, dan harga terjangkau</p>
+          <a href="#produk" class="btn">Lihat Produk</a>
+        </div>
+        <div class="hero-image">
+          <img src="banner.jpeg" alt="Banner Chispay.id" />
+        </div>
+      </div>
+    </section>
+
+    <section class="produk" id="produk">
+      <div class="container">
+        <h2 class="section-title">Layanan Jasa & Produk Kami</h2>
+        <div class="produk-grid">
+          <div class="produk-item">
+            <img src="ktlg.jpeg" alt="Pulsa" />
+            <h3>Pulsa All Operator</h3>
+            <div class="harga">
+              <p>5.000 = Rp 7.000</p>
+              <p>10.000 = Rp 12.000</p>
+              <p>15.000 = Rp 17.000</p>
+              <p>20.000 = Rp 22.000</p>
+              <p>25.000 = Rp 27.000</p>
+            </div>
+            <button class="btn-beli" onclick="redirectToWA('Pulsa')">
+              Beli Sekarang
+            </button>
+          </div>
+
+          <div class="produk-item">
+            <img src="ktlg1.jpeg" alt="Kuota Internet" />
+            <h3>Kuota Internet</h3>
+            <div class="harga">
+              <p>Price List?</p>
+              <p>
+                Hubungi Saya Dengan Cara Klik Beli Sekarang Dan Akan Diarahkan
+                Pada Whatsapp Saya
+              </p>
+              <p>Note : Harga Kadang Berbeda Beda</p>
+            </div>
+            <button class="btn-beli" onclick="redirectToWA('Kuota Internet')">
+              Beli Sekarang
+            </button>
+          </div>
+
+          <div class="produk-item">
+            <img src="ktlg3.png" alt="Token Listrik" />
+            <h3>Token Listrik</h3>
+            <div class="harga">
+              <p>20.000 = Rp 23.000</p>
+              <p>50.000 = Rp 53.000</p>
+              <p>100.000 = Rp 103.000</p>
+              <p>200.000 = Rp 203.000</p>
+              <p>500.000 = Rp 503.000</p>
+            </div>
+            <button class="btn-beli" onclick="redirectToWA('Token Listrik')">
+              Beli Sekarang
+            </button>
+          </div>
+
+          <div class="produk-item">
+            <img src="ktlg2.jpeg" alt="Top Up Game" />
+            <h3>Top Up Game</h3>
+            <div class="harga">
+              <p>Mobile Legends</p>
+              <p>Free Fire</p>
+              <p>PUBG Mobile</p>
+              <p>Valorant</p>
+              <p>Genshin Impact</p>
+            </div>
+            <button class="btn-beli" onclick="redirectToWA('Top Up Game')">
+              Beli Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tentang" id="tentang">
+      <div class="container">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="tentang-content">
+          <div class="tentang-text">
+            <p>
+              Chispay.id adalah platform digital yang menyediakan layanan
+              pembelian pulsa, kuota internet, token listrik, dan top up game
+              dengan harga terjangkau dan proses cepat.
+            </p>
+            <p>
+              Kami berkomitmen untuk memberikan pelayanan terbaik kepada
+              pelanggan dengan transaksi yang aman dan nyaman.
+            </p>
+          </div>
+          <div class="tentang-image">
+            <img src="tentang.jpeg" alt="Tentang Chispay.id" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="kontak-content">
+          <div class="kontak-info">
+            <h3>Informasi Kontak</h3>
+            <p><i class="fas fa-phone"></i> +62 896 5790 5511</p>
+            <p><i class="fas fa-envelope"></i> rasyahalal89@gmail.com</p>
+
+            <div class="sosmed">
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+          <div class="kontak-form">
+            <h3>Kritik dan Saran</h3>
+            <form>
+              <input type="text" placeholder="Nama Anda" required />
+              <input type="email" placeholder="Email Anda" required />
+              <input type="text" placeholder="Subjek" required />
+              <textarea placeholder="Pesan Anda" required></textarea>
+              <button type="submit" class="btn">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Chispay.id</h3>
+            <p>
+              Solusi pembelian pulsa, kuota, token listrik, dan top up game
+              termurah dan tercepat.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Produk</h3>
+            <ul>
+              <li><a href="#">Pulsa</a></li>
+              <li><a href="#">Kuota Internet</a></li>
+              <li><a href="#">Token Listrik</a></li>
+              <li><a href="#">Top Up Game</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Link Cepat</h3>
+            <ul>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#produk">Produk</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Chispay.id - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="scrpt.js"></script>
+  </body>
+</html>
